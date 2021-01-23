@@ -4,7 +4,6 @@ import os
 ## ======= static file locaton ============
 ## ========== server code =================
 
-@st.cache
 def homepage():
 	st.title("Image Caption System")
 
@@ -20,3 +19,5 @@ def homepage():
 		st.image(uploaded_file, use_column_width=True)
 		st.write(file_details)
 
+
+homepage()
